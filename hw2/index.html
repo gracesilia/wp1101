@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css"  media="screen" href="styles.css">
+    <title>Web Programming HW 2</title>
+  </head>
+  <body>
+
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Album</button>
+        <div class="dropdown-content" style="left:0;">
+          <a onclick="showAlbumPhoto(0)">Europe 2020</a>
+          <a onclick="showAlbumPhoto(1)">Taiwan 2021</a>
+          <a onclick="showAlert()">US 2022 (upcoming) </a>
+        </div>
+      </div>
+
+      <p class="image-viewer__title"> Welcome to My Gallery! </p>
+
+      <div class="container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 6 </div>
+          <img id="photo1" style="width: 100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img id="photo2" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img id="photo3" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img id="photo4" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img id="photo5" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img id="photo6" style="width:100%">
+        </div>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+       
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" id="album1" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="column"> 
+            <img class="demo cursor" id="album2" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" id="album3" style="width:100%" onclick="currentSlide(3)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" id="album4" style="width:100%" onclick="currentSlide(4)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" id= "album5" style="width:100%" onclick="currentSlide(5)">
+          </div> 
+          <div class="column">
+            <img class="demo cursor" id= "album6" style="width:100%" onclick="currentSlide(6)">
+          </div>
+        </div>
+      </div>
+    <script src="main.js" async></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+html,
+body {
+	height: 100%;
+	box-sizing: border-box;
+	background: #c8edff;
+  	font-family: "Brush Script MT";
+	
+}
+.dropbtn {
+	background-color: #0a2a92;
+	color: white;
+	padding: 16px;
+	font-size: 22px;
+	border: none;
+	cursor: pointer;
+	font-family: "Brush Script MT";
+}
+  
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #2fa4bf;}
+
+.image-viewer__title {
+	font-size: 5rem;
+	font-weight: 600;
+	color: #183c8a;
+	margin: 0;
+	margin-top: 2rem;
+  	text-align: center;
+}
+.container {
+	position: relative; 
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 70%;
+}
+
+.mySlides {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+	justify-content: center;
+}
+  
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.numbertext {
+	color: #f2f2f2;
+	font-size: 25px;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.207);
+	background-size: 10px 15px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: #0a2a92;
+	padding: 2px 16px;
+	color: white;
+	
+}
+  
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 16.66%;
+}
+  
+.demo {
+	opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+	opacity: 1;
+}
+  
